@@ -70,15 +70,11 @@ if streamlit.button ('Add a Fruit to the List'):
     back_from_function = insert_row_snowflake(add_my_fruit)
     streamlit.text(back_from_function)
 
+streamlit.stop ()
 
 #import requests
 # write your own comment -what does the next line do? 
 # write your own comment - what does this do?
 # don't run anything past here while we troubleshoot
-streamlit.stop ()
-
 #import snowflake.connector
-
-streamlit.write('Thanks for adding ', add_my_fruit)
-
 #This will not work correctly, but just go with it for now
