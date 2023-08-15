@@ -42,7 +42,7 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
 # Allow the end user to add a fruit to the list
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado','Strawberries'])
-fruits_to_show = my_fruit_list.loc[fruits_selected]
+add_my_fruit = streamlit.text_input("What fruit would you like to add?:")
+streamlit.write('Thanks for adding ', add_my_fruit)
 
 
